@@ -1,5 +1,8 @@
+import { RoutingModule } from './routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { AuthService } from './service/auth.service';
 
 import { AppComponent } from './app.component';
 
@@ -8,9 +11,12 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RoutingModule
   ],
-  providers: [],
+  providers: [
+    // AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

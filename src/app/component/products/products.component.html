@@ -1,0 +1,11 @@
+<p>products works!</p>
+
+<div>
+  <a [routerLink]="['./main']">Main</a> |
+  <a [routerLink]="['./more-info']">More Info</a> |
+  Enter id: <input type="text" size="6" #id>
+  <button (click)="goToProduct(id.value)">Go</button>
+</div>
+
+<router-outlet></router-outlet>
+

@@ -1,0 +1,21 @@
+<p>login works!</p>
+
+<form *ngIf="!authService.getUser()">
+  <div role="alert" *ngIf="message.length > 0"></div>
+  <p>{{ message }}</p>
+  <div>
+    <label for="username">User: (type <em>user</em>)</label>
+    <input name="username" type="text" #username>
+  </div>
+  <div>
+    <label for="password">Password: (type <em>password</em>)</label>
+    <input name="password" type="password" #password>
+  </div>
+
+  <a href (click)="login(username.value, password.value)">Submit</a>
+</form>
+
+<div *ngIf="authService.getUser()">
+  <p>Logged in as <b>{{ authService.getUser()}}</b></p>
+  <a href (click)="logout()">Log out</a>
+</div>
