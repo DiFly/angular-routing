@@ -1,6 +1,6 @@
 # AngularRouting
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1. In this app using routing, protected routing, guard, simple lazy module.
 
 ## Development server
 
